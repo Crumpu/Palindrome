@@ -1,6 +1,6 @@
 'use strict';
 
-const str = 'аргентина манит негра';
+const str = 'Не дебил и бедеН ';
 const sep = '';
 
 const palindrome = (str, sep) => {
@@ -11,9 +11,6 @@ const palindrome = (str, sep) => {
     .reverse()
     .join(sep)
     .replaceAll(' ', sep);
-    if (exampleStr === reverseStr) {
-        return true;
-    }
-    return false;
+  return exampleStr === reverseStr;
 };
 console.log(palindrome(str, sep));
