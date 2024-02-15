@@ -1,6 +1,6 @@
 'use strict';
 
-const str = 'Не дебил и бедеН ';
+const str = 'Аргентина манит негра';
 const sep = '';
 
 const palindrome = (str, sep) => {
