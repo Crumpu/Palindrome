@@ -3,20 +3,17 @@
 const str = 'аргентина манит негра';
 const sep = '';
 
-const exampleStr = (str, sep) => str.toLowerCase().replaceAll(' ', sep);
-
-const reverseStr = (str, sep) =>
-  str.toLowerCase().split(sep).reverse().join(sep).replaceAll(' ', sep);
-
-
-function palindrome(exampleStr, reverseStr) {
+const palindrome = (str, sep) => {
+  const exampleStr = str.toLowerCase().replaceAll(' ', sep);
+  const reverseStr = str
+    .toLowerCase()
+    .split(sep)
+    .reverse()
+    .join(sep)
+    .replaceAll(' ', sep);
     if (exampleStr === reverseStr) {
         return true;
     }
     return false;
-
-}
-
-console.log(exampleStr())
-console.log(reverseStr())
-// console.log(palindrome(exampleStr, reverseStr));
+};
+console.log(palindrome(str, sep));
